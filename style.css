@@ -1,0 +1,322 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --ff-primary: 'Roboto', sans-serif;
+  --text-color: #fff;
+  --hue: 195;
+  --primary-color: hsla(var(--hue), 91%, 25%, 1);
+}
+
+body::before {
+  content: "";
+  background: #000000;
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+
+  z-index: -1;
+
+}
+
+body,
+html {
+  font-size: 1.6rem;
+  max-height: 100vh;
+  min-width: 100vw;
+}
+
+body * {
+  font-family: var(--ff-primary);
+}
+
+#app{
+  padding: 2rem;
+  max-width: 112rem;
+  margin: 0 auto;
+}
+
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 11rem;
+  justify-content: center;
+  gap: 28.6rem;
+}
+
+.sr-back {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.search {
+  gap: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+#search-input {
+  width: 46.2rem;
+  height: 4.8rem;
+  font-weight: 400;
+  font-size: 1.6rem;
+  padding: 1.6rem;
+  background: #06181C;
+  border-radius: 5px;
+  gap: 10px;
+  border: none;
+}
+
+
+
+.search button {
+  background-color: hsla(var(--hue), 91%, 25%, 1);
+  
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+ 
+  
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  
+ 
+  
+  color: #FFFFFF;
+
+
+
+
+  border-radius: 5px;
+  height: 4.8rem;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 29px;
+  gap: 8px;
+  cursor: pointer;
+}
+
+input{
+  font-weight: 400;
+font-size: 16px;
+line-height: 100%;
+color: #ffffff;
+}
+
+.search button:hover {
+  background: #FFFFFF;
+  color: hsla(var(--hue), 91%, 25%, 1);
+
+}
+
+.search button:hover {
+  background: #FFFFFF;
+  color: hsla(var(--hue), 91%, 25%, 1);
+
+}
+
+
+#git {
+  width: 18.628rem;
+  height: 3.275rem;
+}
+
+td img {
+  width: 5.6rem;
+  height: 5.6rem;
+}
+
+.table-border {
+  border: 2px solid #4A808C;
+  border-radius: 1.2rem;
+  -webkit-border-radius: 1.2rem;
+  -moz-border-radius: 1.2rem;
+  overflow: hidden;
+  margin-top: 8.7rem;
+}
+
+.table-border tbody::-webkit-scrollbar {
+  width: 20px;
+}
+
+.table-border tbody::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.table-border tbody::-webkit-scrollbar-thumb {
+  padding: 2px;
+  border: 8px solid rgba(0, 0, 0, 0);
+  background-clip: padding-box;
+  background-color: hsla(191, 31%, 42%, 1);
+  border-radius: 1rem;
+}
+
+.table-border tbody::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+
+table {
+  border-collapse: collapse;
+  min-width: 108rem;
+}
+
+*table {
+  font-size: 1.4rem;
+  color: var(--text-color);
+  
+}
+
+
+
+table th {
+  background-color: #092D38;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 160%;
+  padding: 1.6rem 4rem;
+
+  color: #E1E1E6;
+
+  text-align: left;
+  font-weight: normal;
+
+  font-size: 20px;
+
+}
+
+table th:first-child,
+table td:first-child {
+  min-width: 50rem;
+}
+
+table th,
+table td {
+  min-width: 19rem;
+}
+
+table tr {
+  display: table;
+  width: 100%; 
+  table-layout: auto;
+  border-bottom: 1px solid #4A808C;
+}
+
+
+
+table th:first-child {
+  border-top-left-radius: 1.2rem;
+  
+}
+
+
+
+
+table th:last-child {
+  border-top-right-radius: 1.2rem;
+}
+
+tbody tr:nth-child(even) {
+  background: hsla(192, 65%, 7%, 1);
+
+}
+
+tbody tr:nth-child(odd) {
+  background: rgba(6, 22, 27, 0.5);
+  
+}
+
+tbody tr{
+  border: 1px solid #4A808C;
+  border-radius:0 0 12px 12px;
+}
+table tbody {
+    
+    overflow-y: overlay;
+    max-height: 40rem;
+    scroll-behavior: smooth;
+}
+
+td.user {
+  display: flex;
+  gap: 1rem;
+}
+
+table td {
+  padding: 2.4rem 4rem;
+  text-align: left;
+  font-weight: 700;
+  font-size: 2rem;
+
+  color: #E1E1E6;
+}
+
+
+
+td.user img {
+  width: 5rem;
+  height: 5rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+td.user a {
+  text-decoration: none;
+}
+
+td.user a,
+p,
+span {
+  font-weight: bold;
+  color: #E1E1E6;
+}
+
+td .remove {
+  background: none;
+  border: none;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2REM;
+
+  color: #f84756;
+
+  cursor: pointer;
+}
+
+table tbody {
+  display: block;
+  overflow-y: overlay;
+  max-height: 40rem;
+  scroll-behavior: smooth;
+}
+
+
+.clean-table {
+  background-image: url(/Img/Empty\ State.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  height: 40rem;
+}
