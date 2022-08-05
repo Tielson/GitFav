@@ -313,7 +313,7 @@ table tbody {
 
 
 .clean-table {
-  background-image: url(/Img/Empty\ State.svg);
+  background-image: url(./Img/EmptyState.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
